@@ -6,12 +6,17 @@
         body {
             width: 100%;
             height: auto;
-            background-image: url("../IMG/bg2.jpg");
-            /* background-image: url("../IMG/musikbg18.jpg"); */
-            /* background-color: #f3f3f3; */
-            /* background-size: cover;
-            background-repeat: no-repeat; */
-            overflow-x: hidden !important;
+           /* background-image: url("../IMG/bg2.jpg");*/
+            /*  background-image: url("../IMG/musikbg18.jpg"); */
+           /* background-color: #f06407; */
+           /*background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);*/
+           /* background: radial-gradient(#fbfffe, #96674d);*/
+          background-image: url("../IMG//musik-hintergrund-3.webp");
+          /*background: radial-gradient(#10b3f3, #949b98);*/
+           
+           background-size: cover;
+           background-repeat: no-repeat; 
+           overflow-x: hidden !important;
         }
         
         .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close::before {
@@ -40,11 +45,10 @@
             top: 20px;
         }
         
-        #slider1 {
+      #slider1 {
             margin: 0 auto;
             position: relative;
-            width: 100%;
-            height: auto;
+           
         }
         
         #header-menu-ul {
@@ -114,30 +118,6 @@
             animation-iteration-count: infinite;
         }
         
-        #button-wrapper-smart {
-            margin-top: -50px;
-        }
-        
-        #button-ul-smart {
-            display: none;
-            padding-top: 15px;
-            position: relative;
-            /* height: 160px; */
-            width: 100%;
-            margin: 0 0;
-            /* background: radial-gradient(rgba(255, 255, 255, 0.863), rgb(255, 255, 255), gray); */
-        }
-        
-        #button-ul-smart>li {
-            list-style: none;
-            width: 80%;
-            position: relative;
-            margin: 0 auto;
-        }
-        
-        #button-ul-smart>li:nth-child(1) {
-            margin-bottom: 10px;
-        }
         
         #damga-smart {
             display: none;
@@ -149,9 +129,69 @@
         
         #animation-text-smart {
             animation-name: example-animation-text-smart;
+          
             animation-duration: 3s;
+          
             animation-iteration-count: infinite;
+           
         }
+
+
+        #slider-smart-2{
+
+            animation-name: example-slider-smart-2;
+           
+            animation-iteration-count:infinite;
+          
+            animation-duration: 8s;
+         
+            
+        }
+
+        #ziyaretci{
+
+            display: block;
+            top:820px !important;
+            left:14px !important;
+        }
+        
+
+        #slider-laptop-1600-ekran{
+
+            display:block !important;
+
+            animation-name: example-slider-laptop-1600-ekran;
+            animation-iteration-count:infinite;
+            animation-duration: 8s;
+            animation-timing-function: ease-in-out;
+
+        }
+
+        #button-ul-smart{
+            display: none !important;
+        }
+
+
+
+        /*=====================================*/
+
+
+        @keyframes example-slider-smart-2{
+            100% {
+                transform: translateX(-267px)
+              
+            }
+                
+        }
+
+        @keyframes example-slider-laptop-1600-ekran{
+            100% {
+                transform: translateX(-500px);         }
+                
+        }
+
+    
+
         
         @keyframes example-animation-text-smart {
             100% {
@@ -228,7 +268,31 @@ transform: rotate(90deg);
             #label-www {
                 margin-top: 50px;
             }
+
+            #footer-label{
+                top: 1280px;
+            }
+            
+            #kommentar-div{
+                display: none!important;
+            }
+            #smart-damga{
+
+                top:750px !important;
+            }
+
+            #button-ul-smart{
+                display: none !important;
+            }
+
+            
+            
         }
+
+        
+
+        /*-----------------------------------1250--------------------------------------*/
+        
         
         @media only screen and (min-width:900px) and (max-width:1250px) {
             body {
@@ -241,8 +305,9 @@ transform: rotate(90deg);
                 display: none !important;
             }
             #textillate1 {
-                transform: scale(0.9);
-                /* left: 100px; */
+                transform: scale(0.7);
+                 margin-left: 35px !important; 
+               /* display: none !important;*/
             }
             #logo {
                 top: 60px;
@@ -276,36 +341,69 @@ transform: rotate(90deg);
                 transform: scale(0.8);
             }
             #ziyaretci {
-                margin-top: -50px;
-                display: block !important;
+                margin-top: 30px;
+                display: none !important;
             }
             #footer-label {
-                margin-top: -55px;
+                margin-top: 15px;
                 /* display: none; */
             }
             #logo {
                 top: 0px;
             }
             #button-wrapper {
-                margin-top: 70px !important;
+                top: 210px !important;
             }
+
+            #slider-wrapper,
+            #slider1 {
+               
+                height:500px !important;
+            }
+
+           
+           
+            #slider-laptop-1600-ekran{
+                display:block !important;  
+                float:right;
+                right:600px;
+                
+              }
+
+              #kommentar-div{
+                display: none !important;
+            }
+
+            #button-ul-smart{
+                display: none !important;
+            }
+
         }
+
+        
+
+        
+
+         /*---------------------------------900-------------------------------------*/
         
         @media only screen and (min-width:680px) and (max-width:900px) {
             body {
                 /* background-image: url("../IMG/bg22.jpg"); */
-                height: 830px;
+                height: auto;
+                width:400px !important;
                 overflow: hidden !important;
+                
+                
             }
             #label-www-smart1 {
                 display: none !important;
             }
             #ziyaretci {
-                display: block !important;
+                display: none!important;
                 margin-top: -50px;
             }
             #textillate1 {
-                display: none;
+                display: none !important;
             }
             #gitar2 {
                 margin-left: -100px;
@@ -317,17 +415,19 @@ transform: rotate(90deg);
                 display: none;
             }
             #damga {
-                display: none;
+                display: none !important;
+                top:700px;
             }
             #footer-label {
                 top: -100px;
             }
             #ziyaretci {
-                display: block !important;
+                display: none !important;
+                margin-left:580px;
             }
             #damga2-tablet {
-                display: block !important;
-                margin-top: 50px !important;
+                display: none!important;
+                margin-top: 150px !important;
             }
             .ui-dialog {
                 /* transform: scale(0.8);
@@ -340,26 +440,102 @@ transform: rotate(90deg);
                 margin-top: 100px;
             }
             #button-wrapper {
-                margin-top: 70px !important;
+                margin-top: 40px !important;
             }
             #label-www {
                 margin-top: 50px !important;
+                display:none !important;
             }
+
+           
+            #slider1{
+            display:none;
+              
+             height: -300px;
+              left:-50px;
+            }
+
+            #slider-laptop-1600-ekran{
+
+                margin-top:-70px;
+                float:right;
+                right:600px;
+                display:none !important;  
+              }
+
+              #button-ul-smart{
+                  display: none !important;
+              }
+              #toplum{
+
+                display:none !important;
+              }
+
+              #button-wrapper, #button-ul{
+
+                    display:none !important;
+              }
+
+             #button-ipad-wrapper{
+
+                display:block !important;
+             }
+
+             #button-ul-ipad{
+                 display: inline-flex;
+                 margin-left: 120px;
+             }
+
+             #button-ul-ipad >li:nth-child(2){
+           
+            margin-left:100px !important;
+             }
+
+             #label-dieburg-ipad{
+                 width:270px;
+             }
+
+             #footer-labels{
+                 display:none;
+             }           
+            
+            #nota{
+
+                display: none !important;
+            }
+
+            #textillate-ipad{
+                display:block !important;
+            }
+            
+    
+            #textillate-ipad-2{
+                display:block !important;
+            }
+
+
+
+            
+
         }
-        
+
+            
+
+        /*---------------------------------680-------------------------------------*/
+
         @media only screen and (min-width:410px) and (max-width:680px) {
             body {
-                /* height: 780px !important; */
-                background-image: url("../IMG/bg2.jpg");
-                background-size: cover;
-                background-repeat: no-repeat;
+                height: 780px !important;
+             /* background-image: url("../IMG/");*/
+              /*background: radial-gradient(#40ecb3, #9198e5);*/
+              /*background: radial-gradient(#40ecb3,#ffffff, #076ba5);*/
+              background: radial-gradient(#40ecb3, #ddabab);
+               /* background-size: cover;*/
+               /* background-repeat: no-repeat;*/
                 overflow: hidden !important;
+         
             }
-            #ziyaretci {
-                margin-top: 100px;
-                left: -10px;
-                /* display: none; */
-            }
+            
             #damga2-tablet {
                 display: none !important;
                 right: 10px;
@@ -385,7 +561,7 @@ transform: rotate(90deg);
                 display: none !important;
             }
             #button-ul-smart {
-                margin-top: 50px !important;
+                margin-top: 400px !important;
                 display: block !important;
             }
             #button-ul-smart>li:nth-child(2) {
@@ -397,36 +573,243 @@ transform: rotate(90deg);
                 display: none !important;
             }
             #ziyaretci {
-                margin-top: -140px !important;
-                margin-left: 0px !important;
+                margin-top: -190px !important;
+                margin-left: 22px !important;
+                color:rgb(0, 0, 0);
+
                 display: block !important;
+                
             }
             #footer-label {
-                margin-top: -130px !important;
-                margin-left: 0px !important;
-                display: block !important;
+                margin-top: -185px !important;
+                margin-left: 22px !important;
+                display: none !important;
+               
             }
+            #logo{
+                display: none;
+            }
+            #slider1{
+                display: none;
+            }
+
+            #nota{
+                display: none;
+            }
+
+            #label-darmstadt-smart{
+
+                color:rgb(0, 0, 0);
+                text-shadow:1px 1px 1px rgb(255, 209, 209);
+
+            }
+            #label-dieburg-smart{
+                color:rgb(0, 0, 0);
+                text-shadow:1px 1px 1px rgb(255, 209, 209);
+            }
+
+           #smart-div{
+
+            display:block !important;
+           }
+           #textillate1-smart{
+            display: block !important;
+           }
+
+           #slider-wrapper2{
+            
+            display:  block !important;
+
+           }
+
+        
+
+          #smart-footer-label{
+              
+              
+              left:32px !important;
+              top: 670px !important;
+
+              display: block!important;
+          }
+
+         #slider-smart-2{
+
+             display: block !important;
+             left:380px !important;
+         }
+            
+        
+
+        #kommentar-div{
+            top:500px;
+            width:100%;
+            display: block !important;
         }
+
+
+        #slider-laptop-1600-ekran{
+
+            display:none !important;  
+          }
+
+          
+        #button-wrapper-smart {
+            margin-top: 250px;
+            width:470px;
+        }
+        
+        #button-ul-smart {
+        
+            padding-top: 15px;
+            position: relative;
+            /* height: 160px; */
+            width: 100%;
+            margin: 0 -25px !important;
+            /* background: radial-gradient(rgba(255, 255, 255, 0.863), rgb(255, 255, 255), gray); */
+        }
+        
+        #button-ul-smart>li {
+            list-style: none;
+            width: 60%;
+            position: relative;
+            margin: 0 auto;
+        }
+        
+        #button-ul-smart>li:nth-child(1) {
+            margin-bottom: -20px;
+        }
+
+       
+
+        /* #button-wrapper-smart > #button-ul-smart > li:nth-child(2) {
+            margin-top: -30px;
+        }
+        */
+
+        #textillate-smart-2{
+            left:40px !important;
+            width:550px !important;
+      }
+
+     #toplum{
+         display:block !important;
+     }
+
+
+     #textillate-ipad{
+        display:none;
+
+    }
+
+    #textillate-ipad-2{
+        display:none;
+
+    }
+
+
+    #flag-1{
+
+        margin-top:15px !important;
+        margin-right: -15px !important;
+        width:35px !important; 
+        height:27px !important;
+
+    }
+
+    
+
+    #flag-2{
+
+        margin-top:13px !important;
+        margin-right: -50px !important;
+        width: 35px !important; 
+        height:28px !important;
+
+       
+
+    }
+
+    #label-flag-türkisch{
+
+        margin-top: 42px !important;
+        margin-right: 25px;
+        font-size: 12px;
+       
+    }
+
+    #label-flag-german{
+        margin-top: 42px !important;
+        margin-right: 5px;
+        font-size: 12px;
+        
+       
+    }
+
+    #laptop-flag{
+
+        position: absolute;
+        margin-right: 0px !important;
+       
+    }
+
+
+    #textillate-smart-2{
+
+        top:30px !important;
+
+        left:40px !important;
+        width:550px !important;
+
+       
+        font-size:17px !important;
+        font-weight: bold !important;
+
+        display: block;
+    }
+
+    #textillate-smart-2-deutsch{
+        top:30px !important;
+
+        left:55px !important;
+        width:550px !important;
+
+       
+        font-size:14px !important;
+        font-weight: bold !important;
+
+        display: block;
+
+    }
+
+    
+    
+
+
+    }
+
+    /*------------------------------410----------------------------------------*/
         
         @media only screen and (min-width:180px) and (max-width:410px) {
             body {
-                height: 680px !important;
-                width: 320px !important;
-                background-image: url("../IMG/bg2.jpg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                overflow: hidden !important;
+                height: auto !important;
+                width: 330px !important;
+                background-image: none;
+                background: radial-gradient(#fbfffe, #96674d);
+               /* background-size: cover;*/
+                /*background-repeat: no-repeat;*/
+                overflow: scroll !important;
             }
             #banner {
-                background-color: rgba(94, 104, 34, 0.562);
+                
                 width: 400px !important;
-                font-size: 0.8em !important;
+                
             }
             #logo {
                 top: 80px;
             }
             #textillate1-smart {
-                display: block !important;
+                display: none !important;
                 left: 40px;
                 top: 30px;
             }
@@ -456,8 +839,15 @@ transform: rotate(90deg);
                 display: none;
             }
             #button-ul-smart {
-                display: block !important;
+               
                 margin-top: -80px !important;
+                margin-left: 10px !important;
+
+                height: 330px;
+                margin-top: -35px;
+                padding-top: 80px;
+
+                display: block !important;
             }
             #footer-label {
                 margin-left: 45px;
@@ -480,19 +870,12 @@ transform: rotate(90deg);
             #gitar2 {
                 display: none;
             }
-            #button-ul-smart {
-                height: 330px;
-            }
-            #button-ul-smart {
-                margin-top: -35px;
-                padding-top: 80px;
-            }
+           
+            
             /* #button-ul-smart>li {
             float: none !important;
         } */
-            #ziyaretci {
-                top: 825px;
-            }
+           
             /* #damga-smart2 {
                 display: none !important;
             } */
@@ -508,14 +891,19 @@ transform: rotate(90deg);
                 display: none !important;
             }
             #ziyaretci {
-                margin-top: -380px !important;
-                margin-left: 39px !important;
+                margin-top: -370px !important;
+                margin-left: 1px !important;
+                font-size:0.8em !important;
+
+
                 display: block !important;
             }
+
+          
             #footer-label {
                 top: 560px !important;
                 left: -35px !important;
-                display: none !important;
+                display: block !important;
             }
             #button-ul-smart>li:nth-child(2) {
                 margin-top: 50px !important;
@@ -527,7 +915,7 @@ transform: rotate(90deg);
                 display: none !important;
             }
             #animation-text-smart {
-                display: block !important;
+                display: none !important;
             }
             #footer-label-smart {
                 display: block !important;
@@ -536,7 +924,12 @@ transform: rotate(90deg);
                 display: block !important;
             }
             #smart-footer-label {
+                
+                top:490px !important;
+                left: 10px !important;
+
                 display: block !important;
+                
             }
             #slider-wrapper,
             #slider1 {
@@ -547,5 +940,311 @@ transform: rotate(90deg);
             }
             #damga-smart {
                 display: none !important;
+            }
+
+            #logo{
+                display: none;
+            }
+
+            #slider1{
+                display: none;
+            }
+
+            #label-darmstadt-smart{
+            
+                width:100%;
+                color:rgb(0, 0, 0);
+               /*text-shadow:1px 1px 1px rgb(7, 6, 6);*/
+
+            }
+            #label-dieburg-smart{
+
+                width:100%;
+                color:rgb(0, 0, 0);
+                /*text-shadow:1px 1px 1px rgb(7, 6, 6);*/
+            }
+           
+         
+
+           #slider-wrapper2{
+            
+            display:  block !important;
+
+           }
+
+           #Kommentar{
+
+            display: block !important;
+           }
+            
+            #kommentar-div{
+                display: block !important;
+            }
+
+            #slider-laptop-1600-ekran{
+
+
+                display:none!important;  
+              }
+            
+
+
+
+              
+
+              #smart-div{
+                  left:0px;
+                 
+                  width:360px !important;
+                  height:90px !important;
+                  
+                  display:block !important;
+              }
+
+
+            #smart-div > img{
+                margin-top:-5px !important;
+
+                display: block !important;
+            }
+
+
+            #textillate-smart-2{
+
+                top:35px !important;
+
+                left:50px !important;
+                width:550px !important;
+
+               
+                font-size:17px !important;
+                font-weight: bold !important;
+
+                display: block;
+            }
+
+            #textillate-smart-2-deutsch{
+                top:35px !important;
+
+                left:60px !important;
+                width:550px !important;
+
+               
+                font-size:15px !important;
+                font-weight: bold !important;
+
+                display: block;
+
+            }
+
+            #toplum{
+                                         
+                    margin-top: -80px !important;
+                    width:370px !important; 
+
+                    display:none !important;
+            }
+
+
+              
+              #slider-wrapper2{
+               
+                 height: 170px !important; 
+                 width:350px !important;
+              }
+              #slider-smart{
+                top:-10px;
+                height: 170px !important; 
+                width:360px !important; 
+                
+                display: block!important;
+              }
+              #img1,#img2,#img3,#img4,#img5,#img6, #img7{
+                height: 160px !important; 
+                width:360px !important; 
+              }
+
+              #smart-680-div{
+
+                display:none !important;
+              }
+
+             #smart-div > img{
+                
+                top:8px !important;
+
+                width: 75px !important;
+                
+                height: auto !important;
+
+                /*display: none !important;*/
+             }
+
+
+
+
+             #label-darmstadt-smart{
+                position: absolute;
+                top:10px !important;
+                margin-left: 40px !important;
+                /*display:none !important;*/
+            }
+
+             #darmstadt-btn-smart{
+
+                margin-top:-10px;
+                margin-left: 40px !important;
+                display:block !important;
+             }
+
+            
+
+             #label-dieburg-smart{
+                position: absolute;
+                margin-top:-10px !important;
+                margin-left: 40px !important;
+                display:block !important;
+            }
+
+             #dieburg-btn-smart{
+
+                margin-top:10px;
+                margin-left: 40px !important;
+                display:block !important;
+             }
+             
+      
+
+
+              #footer-label{
+                  display:none !important;
+                 
+              }
+
+              #slider-smart-2{
+                
+                top: 100px !important;
+                left: 380px !important;
+                height:100px;
+
+                display: block !important;
+
+                
+              }
+
+
+              @keyframes example-slider-smart-2{
+                100% {
+                    transform: translateX(-310px)
+                  
+                }
+                    
+            }
+
+
+
+
+              #button-ul-smart {
+                display: none;
+                padding-top: 5px;
+                position: relative;
+                /* height: 160px; */
+                width: 100%;
+                margin: 80px -25px !important;
+                /* background: radial-gradient(rgba(255, 255, 255, 0.863), rgb(255, 255, 255), gray); */
+            }
+            
+            #button-ul-smart>li {
+                list-style: none;
+                width: 60%;
+                position: relative;
+                margin: 0 auto;
+            }
+            
+            #button-ul-smart>li:nth-child(1) {
+                margin-bottom: -20px;
+            }
+    
+           
+    
+            /* #button-wrapper-smart > #button-ul-smart > li:nth-child(2) {
+                margin-top: -30px;
+            }
+            */
+
+            #textillate-ipad{
+                display:none;
+
+            }
+
+            #textillate-ipad-2{
+                display:none;
+
+            }
+
+            #flag-1{
+
+                margin-top:15px !important;
+                margin-right: -20px !important;
+                width:30px !important; 
+                height:22px !important;
+        
+            }
+        
+
+            #flag-2{
+
+                position: absolute !important;
+                margin-top:15px !important;
+                margin-right: -12px !important;
+                width: 30px !important; 
+                height:22px !important;
+        
+               
+        
+            }
+        
+            #label-flag-türkisch{
+        
+                margin-top: 39px !important;
+                margin-right: 15px;
+                font-size: 12px;
+               
+            }
+        
+            #label-flag-german{
+                margin-top: 39px !important;
+                margin-right: 5px;
+                font-size: 12px;
+                
+               
+            }
+        
+            #laptop-flag{
+        
+                position: absolute;
+                margin-right: -20px !important;
+               
+        
+            }
+
+            #darmstadt-btn-smart-deutsch{
+                margin-top:-10px;
+                margin-left:39px !important;
+
+            }
+
+            #dieburg-btn-smart-deutsch{
+
+                margin-left:39px !important;
+
+               /* display:none !important;*/
+            }
+            
+
+        
+            #kurspreis-samsung{
+        
+                display:block !important;
             }
         }

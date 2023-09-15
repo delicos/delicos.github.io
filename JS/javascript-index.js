@@ -21,27 +21,27 @@ $(document).ready(function() {
 
 
 
-    // $("#dialog1").dialog({
-    //     show: {
-    //         effect: 'fade',
-    //         duration: 1000
-    //     },
-    //     hide: {
-    //         effect: 'fold',
-    //         duration: 1000
-    //     },
+     $("#dialog1").dialog({
+         show: {
+             effect: 'fade',
+             duration: 1000
+         },
+         hide: {
+             effect: 'fold',
+             duration: 1000
+         },
 
-    //     width: 820,
-    //     height: 400,
-    //     title: 'Bildiri',
+         width: 820,
+         height: 400,
+         title: 'Bildiri',
 
 
-    //     close: function() {
-    //         var closeBtn = $('.ui-dialog-titlebar-close');
-    //         closeBtn.html('');
+        close: function() {
+            var closeBtn = $('.ui-dialog-titlebar-close');
+            closeBtn.html('');
 
-    //     }
-    // });
+         }
+     });
 
 
 
@@ -52,6 +52,23 @@ $(document).ready(function() {
         $("#dialog-tablet").fadeOut(800);
 
     });
+
+
+//
+ //   if ($(window().width() < 410)) {
+
+  //      $("#kurspreis-samsung").css({'display':'block'});
+  //      $("#kurspreis-iphone").css({'display':'none'});
+
+  //  } 
+
+   // if ($(window().width() > 410 )) {
+
+   //     $("#kurspreis-iphone").css({'display':'block'});
+   //    $("#kurspreis-samsung").css({'display':'none'});
+
+   // } 
+
 
     // if ($(window().width() < 680)) {
 
@@ -108,6 +125,51 @@ $(document).ready(function() {
 
     //////////////////////////
 
+    $("#flag-1").on("mouseover", function(){
+
+        $(this).css({ 'cursor': 'pointer' });
+        $(this).css({ 'transform': 'scale(1.2)' });
+        $(this).css({ 'transition': 'all 0.4s ease' });
+
+    });
+
+    $("#flag-1").on("mouseleave", function(){
+
+        $(this).css({ 'cursor': 'pointer' });
+        $(this).css({ 'transform': 'scale(1)' });
+        $(this).css({ 'transition': 'all 0.4s ease' });
+
+    });
+
+    $("#flag-1").on("click", function() {
+
+        document.location.href = "index.html";
+    });
+
+    //////////////////////////////////////////////////
+
+    $("#flag-2").on("mouseover", function(){
+
+        $(this).css({ 'cursor': 'pointer' });
+        $(this).css({ 'transform': 'scale(1.2)' });
+        $(this).css({ 'transition': 'all 0.4s ease' });
+
+    });
+
+    $("#flag-2").on("mouseleave", function(){
+
+        $(this).css({ 'cursor': 'pointer' });
+        $(this).css({ 'transform': 'scale(1)' });
+        $(this).css({ 'transition': 'all 0.4s ease' });
+
+    });
+
+
+    $("#flag-2").on("click", function() {
+
+        document.location.href = "deutsch-index.html";
+    });
+
 
 
 
@@ -122,10 +184,41 @@ $(document).ready(function() {
 
     }
 
+
+
     $("#darmstadt-btn-smart").on("click", function() {
 
         document.location.href = "darmstadt.html";
     });
+
+    $("#darmstadt-btn-smart-deutsch").on("click", function() {
+
+        document.location.href = "darmstadt-deutsch.html";
+    });
+
+    $("#dieburg-btn-smart").on("click", function() {
+
+        document.location.href = "dieburg.html";
+    });
+
+    $("#dieburg-btn-smart-deutsch").on("click", function() {
+
+        document.location.href = "dieburg-deutsch.html";
+    });
+
+
+
+
+    $("#darmstadt-btn-ipad").on("click", function() {
+
+        document.location.href = "darmstadt.html";
+    });
+
+    $("#dieburg-btn-ipad").on("click", function() {
+
+        document.location.href = "darmstadt.html";
+    });
+
 
     $("#saz2").on("mouseover", function() {
 
@@ -189,25 +282,35 @@ $(document).ready(function() {
 
     // });
 
-
-
+    
     $("#darmstadt-btn").on("click", function() {
 
         document.location.href = "darmstadt.html";
     });
 
 
+    $("#darmstadt-btn-deutsch").on("click", function() {
+
+        document.location.href = "darmstadt-deutsch.html";
+    });
+
+
+    $("#dieburg-btn-deutsch").on("click", function() {
+
+        document.location.href = "dieburg-deutsch.html";
+    });
 
     $("#dieburg-btn").on("click", function() {
 
         document.location.href = "dieburg.html";
     });
 
-    $("#dieburg-btn-smart").on("click", function() {
+    $("#dieburg-btn").on("click", function() {
 
         document.location.href = "dieburg.html";
     });
 
+   
 
     $("#btn1").on("click", function() {
 
@@ -215,16 +318,86 @@ $(document).ready(function() {
     });
 
     $('#slider1').cycle({
+
+        
+        fx: 'fadeZoom',
+        //fx: 'wipe', 
+        //fx:blindX
+        //fx:'blindY',
+        //fx:blindZ
+        //fx: cover
+        //fx:curtainX
+        //fx: curtainY
+        //fx: fade
+        //fx:fadeZoom
+        //fx:growX
+        //fx:growY
+        //fx:none
+        //fx:scrollUp
+        //fx:scrollDown
+        //fx:scrollLeft
+        //fx:scrollRight
+        //fx:scrollHorz
+        //fx:scrollVert
+        //fx:shuffle
+        //fx:slideX
+        //fx:slideY
+        //fx:'toss',
+        //fx:turnUp
+        //fx:turnDown
+        //fx:turnLeft
+        //fx:turnRight
+        //fx:uncover
+        //fx:wipe
+        //fx:zoom
+   
+        
+        easing:  'easeInOutBack',
+        speed: 1700
+
+       // fx:    'zoom',
+	   // sync:  false,
+        //delay: 1000,
+        //speed:1500
+
+        //fx:    'curtainX',
+        //sync:  false,
+        //delay: 2000
         //     fx: 'fade',
         //     speed: 1500,
         //     timeout: 5
 
+        //fx: 'shuffle',
+        //speed: 1500
+       // fx:     'shuffle',
+        //easing: 'easeOutBack',
+        //elay:  -4000
 
-        fx: 'fade',
-        speed: 1500
+
+        
     });
 
 
+    $('#slider-smart').cycle({
+        //     fx: 'fade',
+        //     speed: 1500,
+        //     timeout: 5
+// fx: 'scrollRight',
+
+        fx: 'turnUp',
+        
+        easing:  'easeInOutBack',
+        speed: 1700
+    });
+
+    
+
+    $('#slider-smart-2').cycle({
+       // fx: 'scrollLeft',
+        //delay:1000,
+       // easing:  'easeInOutBack',
+       // speed: 1700
+    });
 
 
 
@@ -249,18 +422,18 @@ $(document).ready(function() {
 
     });
 
-
+    
 
     //textillate
-    $("#textillate1-smart").textillate({
+    $("#textillate-smart-2").textillate({
 
         in: {
-            effect: 'tada',
+            effect: 'fadeInLeftBig',
             speed: 50
 
         },
         out: {
-            effect: 'flash',
+            effect: 'fadeInDown',
             speed: 50
         },
 
@@ -268,7 +441,62 @@ $(document).ready(function() {
 
     });
 
+    //textillate
+    $("#textillate-smart-2-deutsch").textillate({
 
+        in: {
+            effect: 'fadeInLeftBig',
+            speed: 50
+
+        },
+       out: {
+            effect: 'fadeInDown',
+            speed: 50
+        },
+
+        loop: true
+
+    });
+
+    
+
+    $("#textillate-ipad").textillate({
+
+        in: {
+            effect: 'fadeInLeftBig',
+            speed: 300,
+            timeout: 4000,
+
+
+        },
+        out: {
+            effect: 'tada',
+            speed: 300,
+            timeout: 4000
+        },
+
+        loop: true
+
+    });
+
+    $("#textillate-ipad-2").textillate({
+
+        in: {
+            effect: 'fadeInLeftBig',
+            speed: 300,
+            timeout: 4000,
+
+
+        },
+        out: {
+            effect: 'tada',
+            speed: 300,
+            timeout: 4000
+        },
+
+        loop: true
+
+    });
 
 
 
